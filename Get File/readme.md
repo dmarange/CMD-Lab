@@ -7,9 +7,9 @@ through all the directory pathways that you have specified, it outputs all the r
 There are mainly 5 variables that needs to be changed based on your use case.
 1. [`dirs`](get.py#L54) this variable is the pathway to your job directories. See the implementation in
 2. [`data_file_name`](get.py#L52) name of the output results file.
-3. `switch_key` between 'a' and 'w' which will either append the results to the text file (if it exists) or it will overwrite it. 
-4. `re_run` this is a boolean key when set to `True` will resubmit *unfinished* jobs. (an *unfinished job* is a calculation that has not converged AND the adsorbate is still intact)
-5. `cancel_jobs` this is another boolean key when set to `True` will cancel an active job if it has either converged OR the adsorbate has dissociated. 
+3. [`switch_key`](get.py#L53) between 'a' and 'w' which will either append the results to the text file (if it exists) or it will overwrite it. 
+4. [`re_run`](get.py#L61) this is a boolean key when set to `True` will resubmit *unfinished* jobs. (an *unfinished job* is a calculation that has not converged AND the adsorbate is still intact)
+5. [`cancel_jobs`](get.py#L62) this is another boolean key when set to `True` will cancel an active job if it has either converged OR the adsorbate has dissociated. 
 
 variables 4 and 5 are ***super important***.
 
@@ -45,7 +45,7 @@ It is not dissociated!!
 ### Important caveats and disclamers!
 
 1) If the surface has any `N, O, C, H` then it will also be included in the list of indecies, this may or may not alter the results.
-2) You set the sensible bond distances! in the `check_dissociation` function there is a dictionary called `max_bond_length` which mainly determines if two elements can be considered covalently bound or not.
-3) The fragment identifier function `identify_molecule` can only return a chemical formula if the dictionary `molecule_atoms` assigns
+2) You set the sensible bond distances! in the [`check_dissociation`](get.py#L197) function there is a dictionary called [`max_bond_length`](get.py#L240) which mainly determines if two elements can be considered covalently bound or not.
+3) The fragment identifier function [`identify_molecule`](get.py#L182) can only return a chemical formula if the dictionary [`molecule_atoms`](get.py#L166) assigns
     the sequence of elements to a chemical formula. (e.g. a fragment was extracted as `['N','O','H','H']` but the `molecule_atoms` doesn't have an entry of `"NOH2": ["N", "O", "H", "H"]` then the output will be `unknown`)
  
