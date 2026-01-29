@@ -5,8 +5,8 @@ through all the directory pathways that you have specified, it outputs all the r
 
 ## How to use
 There are mainly 5 variables that needs to be changed based on your use case.
-1. `dirs` this variable is the pathway to your job directories. 
-2. `data_file_name` name of the output results file 
+1. [`dirs`](get.py#L54) this variable is the pathway to your job directories. See the implementation in
+2. [`data_file_name`](get.py#L52) name of the output results file.
 3. `switch_key` between 'a' and 'w' which will either append the results to the text file (if it exists) or it will overwrite it. 
 4. `re_run` this is a boolean key when set to `True` will resubmit *unfinished* jobs. (an *unfinished job* is a calculation that has not converged AND the adsorbate is still intact)
 5. `cancel_jobs` this is another boolean key when set to `True` will cancel an active job if it has either converged OR the adsorbate has dissociated. 
