@@ -20,7 +20,7 @@ variables 4 and 5 are ***super important***.
 This is done by chemical formula. The script will `read` the `CONTCAR` (if it can't then `OUTCAR`) and builds an index list of every atom object that is either `N, O, C, H` to 
 seperate the atoms of the adsorbate from the surface. 
 
-The list of indecies will be used to build fragments by doing a depth-first-search algorithm. Essentially it will take an atom object 
+The list of indecies will be used to build fragments by doing a [depth-first-search algorithm](get.py#L257-273). Essentially it will take an atom object 
 and check its distance with every other atom in the list, if it is within limits of a sensible chemical bond, then it will connect them into fragment. This process is repeated until all the
 atoms in this list are made into fragments. 
 
