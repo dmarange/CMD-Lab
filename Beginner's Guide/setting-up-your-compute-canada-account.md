@@ -14,3 +14,5 @@ For other systems, you must manually request access.
 Verify your access status: green checkmark = enabled.
 
 These steps ensure you can log in and start using Compute Canada resources for your calculations.
+
+NEXT: [Choosing A Terminal](./choosing-a-terminal.md)
