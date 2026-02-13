@@ -6,4 +6,4 @@ Additionally, the recent progress in Machine Learning (ML) methods has facilitat
 # Beginner's Guide
 -------------------
 Get started here:
-[Beginner's Guide](./Beginner's-Guide/README.md)
+[Beginner's Guide](./Beginner's_Guide/README.md)
