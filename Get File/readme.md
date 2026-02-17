@@ -20,7 +20,7 @@ variables 4 and 5 are ***super important***.
 This is done by chemical formula. The script will `read` the `CONTCAR` (if it can't then `OUTCAR`) and builds an index list of every atom object that is either `N, O, C, H` to 
 seperate the atoms of the adsorbate from the surface. 
 
-The list of indecies will be used to build fragments by doing a [depth-first-search algorithm](get.py#L257-273). Essentially it will take an atom object 
+The list of indicies will be used to build fragments by doing a [depth-first-search algorithm](get.py#L257-273). Essentially it will take an atom object 
 and check its distance with every other atom in the list, if it is within limits of a sensible chemical bond, then it will connect them into fragment. This process is repeated until all the
 atoms in this list are made into fragments. 
 
@@ -30,7 +30,7 @@ If the chemical formula that it finds matches the name of the adsorbate in the t
 
 Here is an example:
 
-List of Indecies: `[1,22,34,56,79,118]`
+List of indicies: `[1,22,34,56,79,118]`
 
 List of Fragments: `[[1,34],[22,56,79,118]]`
 
@@ -44,7 +44,7 @@ It is not dissociated!!
 
 ### Important caveats and disclamers!
 
-1) If the surface has any `N, O, C, H` then it will also be included in the list of indecies, this may or may not alter the results.
+1) If the surface has any `N, O, C, H` then it will also be included in the list of indicies, this may or may not alter the results.
 2) You set the sensible bond distances! in the [`check_dissociation`](get.py#L197) function there is a dictionary called [`max_bond_length`](get.py#L240) which mainly determines if two elements can be considered covalently bound or not.
 3) The fragment identifier function [`identify_molecule`](get.py#L182) can only return a chemical formula if the dictionary [`molecule_atoms`](get.py#L166) assigns
     the sequence of elements to a chemical formula. (e.g. a fragment was extracted as `['N','O','H','H']` but the `molecule_atoms` doesn't have an entry of `"NOH2": ["N", "O", "H", "H"]` then the output will be `unknown`)
