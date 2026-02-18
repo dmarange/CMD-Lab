@@ -3,3 +3,7 @@ Recent advancements in quantum-mechanical (QM) methods, notably density function
 High-throughput QM calculations, in particular, have established a robust framework for the exploration of new materials. 
 Additionally, the recent progress in Machine Learning (ML) methods has facilitated the exploration of the vast phase space of materials, characterized by structural and compositional degrees of freedom, leading to breakthroughs in materials discovery.
 
+Research Website: https://karamadlab.weebly.com
+
+## Beginner's Guide
+[Beginner's Guide](./Beginner%27s%20Guide/README.md)
