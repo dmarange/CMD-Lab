@@ -1,4 +1,4 @@
-# Setting Up ASE On Compute Canada Cluster
+# Setting Up ASE On Alliance Canada Cluster
 
 You will primarily be using the Atomic Simulation Environment (ASE), an open-source Python package that provides tools for setting up, running, and analyzing simulations using DFT and other atomistic calculators.
 - While your virtual environment is activated, make sure pip is installed and up to date using:
