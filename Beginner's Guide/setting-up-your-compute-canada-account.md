@@ -12,6 +12,7 @@ Step 2: Request system access (Fir)
 Step 3: Check the Alliancecan wiki for help if needed: https://docs.alliancecan.ca/wiki/Getting_started
 
 Important notes:
+
 For other systems, you must manually request access.
 
 Verify your access status: green checkmark = enabled.
@@ -19,5 +20,5 @@ Verify your access status: green checkmark = enabled.
 
 These steps ensure you can log in and start using Alliance Canada resources for your calculations.
 
-#NEXT 
+## NEXT 
 [Choosing A Terminal](./choosing-a-terminal.md)
