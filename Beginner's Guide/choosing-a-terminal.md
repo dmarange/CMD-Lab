@@ -41,9 +41,8 @@ alias PUTANYTHINGHERE="ssh -X USERNAME@CLUSTER.alliancecan.ca"
 ```
 Example:
 ```bash
-alias fir="ssh -X jdoe@fir.alliancecan.ca"
-alias graham="ssh -X jdoe@graham.alliancecan.ca"
-alias nibi="ssh -X jdoe@nibi.alliancecan.ca"
+alias fir="ssh -X abc123@fir.alliancecan.ca"
 ```
+Now, after saving (:wq) and sourcing your bash, you can type "fir" to login to the Fir cluster
 ## NEXT 
 [Logging In To A Compute Canada Cluster](./logging-in-to-a-compute-canada-cluster.md)
