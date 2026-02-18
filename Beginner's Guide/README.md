@@ -1,7 +1,6 @@
 # Beginner's Guide
 
 Below is a work in progress guide on how to get started. The Alliance Canada Wiki (https://docs.alliancecan.ca/wiki/Getting_started) is a great resource for more detailed information.
--------------------
 
 1. [Setting Up Your Alliance Canada Account](./setting-up-your-compute-canada-account.md)
 2. [Choosing A Terminal](./choosing-a-terminal.md)
