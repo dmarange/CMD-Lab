@@ -16,7 +16,6 @@ For other systems, you must manually request access.
 
 Verify your access status: green checkmark = enabled.
 ![Fir login screen](./Images/1firacess.png)
-*Figure: Fir cluster access*
 
 These steps ensure you can log in and start using Alliance Canada resources for your calculations.
 
