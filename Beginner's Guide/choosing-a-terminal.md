@@ -44,4 +44,4 @@ Example:
 alias fir="ssh -X abc123@fir.alliancecan.ca"
 ```
 ## NEXT 
-[Logging In To A Alliance Canada Cluster](./logging-in-to-a-compute-canada-cluster.md)
+[Logging In To An Alliance Canada Cluster](./logging-in-to-a-compute-canada-cluster.md)
