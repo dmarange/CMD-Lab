@@ -23,3 +23,5 @@ source ~/virtenv/bin/activate
 which python
 ```
 The path should include your virtual environment directory.
+##NEXT
+[Setting Up ASE On Compute Canada Cluster](./setting-up-ase-on-compute-canada-cluster.md)
