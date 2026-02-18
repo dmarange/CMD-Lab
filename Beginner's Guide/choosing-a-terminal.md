@@ -43,6 +43,5 @@ Example:
 ```bash
 alias fir="ssh -X abc123@fir.alliancecan.ca"
 ```
-Now, after saving (:wq) and sourcing your bash, you can type "fir" to login to the Fir cluster
 ## NEXT 
 [Logging In To A Compute Canada Cluster](./logging-in-to-a-compute-canada-cluster.md)
