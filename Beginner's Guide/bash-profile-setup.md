@@ -21,7 +21,7 @@ OR
 source ~/.bashrc
 ```
 
-Inside the editor, press I to enter insert mode and add your custom aliases. Once finished, press ESC and type :wq (write and quit).
+Inside the editor, press **I** to enter insert mode and add your custom aliases. Once finished, press **ESC** and type **:wq** (write and quit).
 
 Here are some useful examples:
 
