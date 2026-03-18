@@ -4,7 +4,7 @@ One of the easiest ways to improve your workflow when working with ASE and Compu
 
 To set these up, you’ll need to edit your shell configuration file—commonly .bashrc or .bash_profile (depending on your system and terminal). For Git Bash, you can modify the .bash_profile file using the following commands:
 
--Open for editing:
+- Open for editing:
 ```bash
 vi ~/.bash_profile
 ```
@@ -12,7 +12,7 @@ OR
 ```bash
 vi ~/.bashrc
 ```
--Save changes:
+- Save changes:
 ```bash
 source ~/.bash_profile
 ```
@@ -25,7 +25,7 @@ Inside the editor, press **I** to enter insert mode and add your custom aliases.
 
 Here are some useful examples:
 
--Login in to compute canada cluster:
+- Login in to compute canada cluster:
 ```
 alias PUTANYTHINGHERE= “ssh -X USERNAME@CLUSTER.computecanada.ca”
 ```
@@ -35,7 +35,7 @@ alias fir="ssh -X jdoe@fir.computecanada.ca"
 alias graham="ssh -X jdoe@graham.computecanada.ca"
 alias nibi="ssh -X jdoe@nibi.computecanada.ca"
 ```
--Using ag instead of typing ase gui to view trajectory files:
+- Using ag instead of typing ase gui to view trajectory files:
 ```
 alias ag="ase gui"
 ```
