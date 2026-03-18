@@ -11,4 +11,6 @@ ssh -X USERNAME@CLUSTER.alliancecan.ca
 
 - Your terminal will indicate whether the login was successful and may display additional messages or updates from Alliance Canada.
 ## NEXT 
+[Bash Profile Setup - Optional](./bash-profile-setup.md)
+## NEXT 
 [Setting Up Python On Alliance Canada Cluster](./setting-up-python-on-compute-canada-cluster.md)
