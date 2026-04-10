@@ -10,4 +10,5 @@ Research Website: https://karamadlab.weebly.com
 
 ## Beginner's Guide
 [Beginner's Guide](./Beginner%27s%20Guide/README.md)
-
+## Gas Phase Tutorial
+[Gas Phase Tutorial](./GasPhaseTutorial)
