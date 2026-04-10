@@ -11,7 +11,7 @@ This tutorial is for building a gas-phase workflow that will:
 5. Tabulate all final data.
 
 ## Molecule List
-
+(Built using ase | check CO2 example)
 | Molecule | `molecule.traj` built | Combined job run | `final.energy` checked | Results collected |
 | --- | --- | --- | --- | --- |
 | `NO(g)` |  |  |  |  |
