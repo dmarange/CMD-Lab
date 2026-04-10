@@ -24,11 +24,8 @@ This tutorial is for building a gas-phase workflow that will:
 | `HNO3(g)` |  |  |  |  |
 
 ## Notes
-
-- Add any tutorial-specific assumptions here.
-- Record software versions, paths, and method choices here.
+- I am assuming working on Alliance Canada HPC's and VASP
 - The main workflow now runs from one script in one working directory per molecule.
-- Update the table above as each molecule progresses.
 
 ## Try The Example
 [CO2 Example](ExampleSetup)
