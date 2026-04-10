@@ -30,6 +30,9 @@ This tutorial is for building a gas-phase workflow that will:
 - The main workflow now runs from one script in one working directory per molecule.
 - Update the table above as each molecule progresses.
 
+## Try The Example
+[2. Cluster Setup](GasPhaseTutorial/ExampleSetup/README.md)
+
 ## Next Section
 
 [2. Cluster Setup](2.md)
