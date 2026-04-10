@@ -1,10 +1,6 @@
-# Example Setup
-
-This folder contains an example CO2 gas-phase workflow.
-
 ## CO2 Example
-
-Copy these example files into an exmaple folder in your FIR cluster:
+This folder contains an example CO2 gas-phase workflow.
+Copy these example files (in CO2 directory) into an exmaple folder in your FIR cluster:
 
 - `make_CO2_traj.py`
 - `run.py`
