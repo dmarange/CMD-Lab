@@ -31,7 +31,7 @@ This tutorial is for building a gas-phase workflow that will:
 - Update the table above as each molecule progresses.
 
 ## Try The Example
-[CO2 Example](CMD-Lab/GasPhaseTutorial/ExampleSetup/README.md)
+[CO2 Example](ExampleSetup/README.md)
 
 ## Next Section
 
