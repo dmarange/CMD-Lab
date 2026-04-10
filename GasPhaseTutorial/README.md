@@ -31,7 +31,7 @@ This tutorial is for building a gas-phase workflow that will:
 - Update the table above as each molecule progresses.
 
 ## Try The Example
-[2. Cluster Setup](GasPhaseTutorial/ExampleSetup/README.md)
+[CO2 Example](GasPhaseTutorial/ExampleSetup/README.md)
 
 ## Next Section
 
