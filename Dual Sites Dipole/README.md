@@ -1,8 +1,7 @@
 # Dual Site Dipole Moment and Effect of the Electric Field
 
 While in your virtual environment:
-terminal:
-```bash
+```terminal
 env
 ```
 
