@@ -1,0 +1,95 @@
+#! /usr/bin/env python
+import os, sys
+import numpy as np
+import matplotlib.pyplot as plt
+from math import sqrt, floor, ceil, log, pi, atan
+from ase import Atoms, Atom
+from ase.io import read, write, Trajectory
+from ase.visualize import view
+from ase.constraints import FixAtoms, Hookean
+from ase.optimize import QuasiNewton, BFGS, BFGSLineSearch
+from ase.data import covalent_radii, atomic_numbers
+from ase.build import bulk, fcc111, fcc100, add_adsorbate
+from ase.spacegroup import crystal
+from ase.calculators.vasp import Vasp
+from math import *
+from math import sqrt
+from pathlib import Path
+from ase.build import molecule
+from ase.units import invcm
+from ase.thermochemistry import IdealGasThermo
+import re
+
+vasp_path = os.environ.get("EBROOTVASP")
+if not isinstance(vasp_path, str):
+    raise SystemExit("ERROR: EBROOTVASP not set.")
+
+os.environ["VASP_COMMAND"] = f"srun {vasp_path}/bin/vasp_std"
+os.environ["ASE_VASP_COMMAND"] = os.environ["VASP_COMMAND"]
+
+# --------------------------------------------------
+# 1. Read .traj file
+# --------------------------------------------------
+atoms = read("initial.traj") # Change this to the molecule you want to run (i.e NO2, H2O, etc.)
+atoms.center()
+atoms.pbc = True
+
+# --------------------------------------------------
+# 2. Set Spin
+# --------------------------------------------------       
+elements = atoms.get_chemical_symbols()
+mags = [0]*len(elements)
+
+atoms.set_initial_magnetic_moments([1.]*len(atoms))
+spinstatus =False
+for i in range(0,len(elements)):
+    if( elements[i] in  ['Co','Cr','Fe','Mn','Mo','Ni','V','W'] ):
+        spinstatus = True
+atoms.set_initial_magnetic_moments(mags)
+if spinstatus:
+    SPIN = 2
+if not spinstatus:
+    SPIN = 1
+
+# --------------------------------------------------
+# 3. Geometry optimization
+# --------------------------------------------------
+vasp_geom = Vasp(
+    kpts=[2, 3, 1],
+    xc='PBE',
+    gamma = False,
+    encut=500,
+    nelm=500,
+    potim=0.2,
+    sigma=0.1,
+    ediff=1e-6,
+    ediffg=1e-3,
+    algo=6,
+    gga="PE",
+    prec="Accurate",
+    ibrion=2,
+    lorbit=12,
+    isif=2,
+    ismear=0,
+    ispin=SPIN,
+    istart=0,
+    isym=0,
+    nsw=999,
+    ivdw=12,
+    ncore=8,
+    lcharg=False,
+    lwave=False,
+    lreal='Auto'
+    )
+
+atoms.calc = vasp_geom
+e_dft = atoms.get_potential_energy()
+
+# --------------------------------------------------
+# 4. Save results
+# --------------------------------------------------
+with open("dft.energy", "w") as handle:
+    handle.write(f"DFT Energy of Geometry Relaxed Molecule: {e_dft}\n")
+
+write("relaxed.traj", atoms)
+print(f"DFT Energy of Geometry Relaxed Molecule: {e_dft:.6f} eV")
