@@ -37,7 +37,7 @@ fi
 source /home/kwa/virtenv/bin/activate
 
 # Set VASP command
-export VASP_PP_PATH="srun $HOME/vasp/vasp_PP"
+export VASP_PP_PATH="$HOME/vasp/vasp_PP"
 export ASE_VASP_COMMAND ="mpirun -np ${SLURM_NTASKS} vasp_std"
 
 # Echo key environment variables
