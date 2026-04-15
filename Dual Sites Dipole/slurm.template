@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=DualSiteVaspRun
-#SBATCH --time=05:00:00
+#SBATCH --time=10:00:00
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=32
-#SBATCH --mem-per-cpu=3900
+#SBATCH --ntasks=32
+#SBATCH --mem=120G
 #SBATCH --account=rrg-karamad
 #SBATCH --mail-user=kwa135@sfu.ca
 
@@ -36,8 +36,9 @@ fi
 # Activate your virtualenv
 source /home/kwa/virtenv/bin/activate
 
-# Set ASE VASP command
-export ASE_VASP_COMMAND="srun ${EBROOTVASP}/bin/vasp_std"
+# Set VASP command
+export VASP_PP_PATH="srun $HOME/vasp/vasp_PP"
+export ASE_VASP_COMMAND ="mpirun -np ${SLURM_NTASKS} vasp_std"
 
 # Echo key environment variables
 echo "EBROOTVASP=$EBROOTVASP"
