@@ -1,9 +1,9 @@
 #!/bin/bash
 #SBATCH --job-name=GAS_FreeEnergy_ZPETS
 #SBATCH --time=5:00:00
+#SBATCH --mem=0
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=32
-#SBATCH --mem-per-cpu=3900
+#SBATCH --ntasks=32
 #SBATCH --account=rrg-karamad
 
 # Start timing the entire job
