@@ -31,9 +31,9 @@ alias PUTANYTHINGHERE= “ssh -X USERNAME@CLUSTER.computecanada.ca”
 ```
 Example:
 ```
-alias fir="ssh -X jdoe@fir.computecanada.ca"
-alias graham="ssh -X jdoe@graham.computecanada.ca"
-alias nibi="ssh -X jdoe@nibi.computecanada.ca"
+alias fir='ssh -X jdoe@fir.alliancecan.ca'
+alias graham='ssh -X jdoe@graham.alliancecan.ca'
+alias nibi='ssh -X jdoe@nibi.alliancecan.ca'
 ```
 - Using ag instead of typing ase gui to view trajectory files:
 ```
