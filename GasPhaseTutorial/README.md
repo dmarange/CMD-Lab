@@ -21,7 +21,6 @@ This tutorial is for building a gas-phase workflow that will:
 | `HNO2(g)` |  |  |  |  |
 | `NO2(g)` |  |  |  |  |
 | `CO(g)` |  |  |  |  |
-| `HNO3(g)` |  |  |  |  |
 
 ## Notes
 - I am assuming working on Alliance Canada HPC's and VASP
