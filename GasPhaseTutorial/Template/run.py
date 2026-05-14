@@ -84,7 +84,7 @@ print(f"DFT Energy of Geometry Relaxed Molecule: {e_dft:.6f} eV")
 # 3. Vibrational frequency calculation
 # --------------------------------------------------
 atoms = read("CONTCAR")
-#atoms.pbc = True
+atoms.pbc = True
 
 nfree_val = 2
 nsw_required = 2 * nfree_val * 3 * len(atoms) + 20
@@ -147,6 +147,7 @@ if not vib_energies:
 
 # Apparently IdealGasThermo Does not like PBC for gas phase molecules
 atoms.set_pbc(False)
+
 thermo = IdealGasThermo(
     vib_energies=vib_energies,
     geometry=GEOMETRY,
