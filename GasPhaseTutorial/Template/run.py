@@ -112,7 +112,7 @@ vasp_vib = Vasp(
 )
 
 atoms.calc = vasp_vib
-atoms.get_potential_energy()
+vib_freq_energy = atoms.get_potential_energy()
 
 # --------------------------------------------------
 # 4. Extract vibrational frequencies from OUTCAR
