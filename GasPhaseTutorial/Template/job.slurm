@@ -1,6 +1,6 @@
 #!/bin/bash
 #SBATCH --job-name=GAS_FreeEnergy_ZPETS
-#SBATCH --time=5:00:00
+#SBATCH --time=0:30:00
 #SBATCH --mem=0
 #SBATCH --nodes=1
 #SBATCH --ntasks=32
