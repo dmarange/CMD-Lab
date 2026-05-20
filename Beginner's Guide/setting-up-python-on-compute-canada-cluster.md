@@ -7,6 +7,10 @@ Alliance Canada clusters, such as Cedar and Graham, come with many pre-installed
 ```bash
 python -m venv virtenv
 ```
+OR for MacOs
+```bash
+python3 -m venv virtenv
+```
 - Activate the virtual environment using:
 
 ```bash
