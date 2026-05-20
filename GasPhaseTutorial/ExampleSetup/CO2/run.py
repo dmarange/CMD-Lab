@@ -40,7 +40,7 @@ os.environ["ASE_VASP_COMMAND"] = os.environ["VASP_COMMAND"]
 # --------------------------------------------------
 # 1. Add gas-phase molecule
 # --------------------------------------------------
-atoms = read("co2.traj") # Change this to the molecule you want to run (i.e NO2, H2O, etc.)
+atoms = read("your_molecule.traj") # Change this to the molecule you want to run (i.e NO2, H2O, etc.)
 atoms.center()
 atoms.pbc = True
 
@@ -112,6 +112,7 @@ vasp_vib = Vasp(
 )
 
 atoms.calc = vasp_vib
+vib_freq_energy = atoms.get_potential_energy()
 
 # --------------------------------------------------
 # 4. Extract vibrational frequencies from OUTCAR
@@ -143,6 +144,10 @@ if not vib_energies:
 # --------------------------------------------------
 # 5. Ideal gas thermochemistry
 # --------------------------------------------------
+
+# Apparently IdealGasThermo Does not like PBC for gas phase molecules
+atoms.set_pbc(False)
+
 thermo = IdealGasThermo(
     vib_energies=vib_energies,
     geometry=GEOMETRY,
