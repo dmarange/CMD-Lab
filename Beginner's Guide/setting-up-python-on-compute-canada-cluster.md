@@ -19,7 +19,7 @@ source ~/virtenv/bin/activate
 - You'll see the terminal-user change to something like:
 
 ```
-(virtenv) [username@cedar1 ~]$
+(virtenv) [username@fir1 ~]$
 ```
 - Verify that the Python path is directed to your virtual environment directory using:
 
