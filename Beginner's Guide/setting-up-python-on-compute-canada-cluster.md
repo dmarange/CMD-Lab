@@ -7,19 +7,36 @@ Alliance Canada clusters, such as Cedar and Graham, come with many pre-installed
 ```bash
 python -m venv virtenv
 ```
-OR for MacOs
+OR for MacOs through Homebrew
+- Go to your home directory with:
+- 
+```bash
+cd
+```
+- install Homebrew
+- 
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+- install updated tkinter module
+- 
+```bash
+brew install python-tk
+```
+-install python with
+
 ```bash
 python3 -m venv virtenv
 ```
 - Activate the virtual environment using:
-
+- 
 ```bash
 source ~/virtenv/bin/activate
 ```
 - You'll see the terminal-user change to something like:
 
 ```
-(virtenv) [username@fir1 ~]$
+(virtenv) [username@name~]$
 ```
 - Verify that the Python path is directed to your virtual environment directory using:
 
