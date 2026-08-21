@@ -1,10 +1,20 @@
-# Setting Up Python On Alliance Canada Cluster
+# Setting Up Python
 
 Alliance Canada clusters, such as Cedar and Graham, come with many pre-installed modules and applications, including Python. However, these system-wide installations cannot be customized to suit your specific needs. To properly set up ASE, it is recommended that you install your own personal Python environment within your cluster account.
 
-## For Windows
+## On the cluster
 - In your $home, create a folder (virtenv) that will be the path to the virtual environment containing Python:
 
+```bash
+python -m venv virtenv
+```
+
+## For Windows (LOCAL)
+- Go to your home directory with:
+```bash
+cd
+```
+- Make your virtual environment with:
 ```bash
 python -m venv virtenv
 ```
@@ -14,15 +24,15 @@ python -m venv virtenv
 ```bash
 cd
 ```
-- install Homebrew
+- Install Homebrew
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
-- install updated tkinter module
+- Install updated tkinter module
 ```bash
 brew install python-tk
 ```
-- install python with
+- Install python with
 ```bash
 python3 -m venv virtenv
 ```
