@@ -20,7 +20,7 @@ cd
 ```bash
 brew install python-tk
 ```
--install python with
+- install python with
 ```bash
 python3 -m venv virtenv
 ```
