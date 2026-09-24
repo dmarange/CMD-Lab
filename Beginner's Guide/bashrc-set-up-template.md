@@ -64,7 +64,7 @@ fi
 # ------------------------------------------------------------
 
 # Path to your virtual environment
-export VENV_PATH="/home/USERNAME/scratch/virtenv" 
+export VENV_PATH="/home/USERNAME/chem469" 
 export PYTHONPATH="$VENV_PATH/lib/python3.11/site-packages:$PYTHONPATH"
 export PATH="$VENV_PATH/bin:$PATH"
 
