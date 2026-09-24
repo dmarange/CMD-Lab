@@ -48,6 +48,13 @@ export VASP_VDW="$VASP_HOME/vasp-support"
 ```
 
 Basic Setup
+Inside the terminal type:
+`vi ~/.bashrc`
+
+You can press `I` to enter `INSERT` mode, and `:q!` to force-exit (without saving), and `:wq` to save and exit.
+
+Copy the text below inside your `.bashrc` profile.
+
 ```bash
 # ------------------------------------------------------------
 if [ -f /etc/bashrc ]; then
