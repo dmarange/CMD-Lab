@@ -1,5 +1,6 @@
 # Bashrc set up template
 
+vi ~/.bashrc
 ```bash
 # ~/.bashrc -- merged Quantum ESPRESSO + VASP environment for Cedar (Compute Canada)
 
