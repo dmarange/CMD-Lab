@@ -42,13 +42,6 @@ export VASP_COMMAND="mpirun ${EBROOTVASP}/bin/vasp_std"
 export VASP_HOME="$HOME/vasp"
 export VASP_PP_PATH="$VASP_HOME/vasp_PP"
 export VASP_VDW="$VASP_HOME/vasp-support"
-
-# ------------------------------------------------------------
-# 5) SLURM default account (so you don't have to specify every time)
-# ------------------------------------------------------------
-export SLURM_ACCOUNT="rrg-karamad"
-export SBATCH_ACCOUNT="$SLURM_ACCOUNT"
-export SALLOC_ACCOUNT="$SLURM_ACCOUNT"
 ```
 
 Basic Setup
