@@ -61,16 +61,10 @@ fi
 
 # Path to your virtual environment
 export VENV_PATH="/home/USERNAME/scratch/virtenv" 
-
 export PYTHONPATH="$VENV_PATH/lib/python3.11/site-packages:$PYTHONPATH"
-
-
 export PATH="$VENV_PATH/bin:$PATH"
 
-
-
 # Aliases 
-
 alias env='source $VENV_PATH/bin/activate'
 alias deac='deactivate'
 ```
