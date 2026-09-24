@@ -52,7 +52,7 @@ Basic Setup
 Inside the terminal type:
 `vi ~/.bashrc`
 
-You can press `I` to enter `INSERT` mode, and `:q!` to force-exit (without saving), and `:wq` to save and exit.
+You can press `I` to enter `INSERT` mode and press `esc` to exit out of it, and `:q!` to force-exit (without saving), and `:wq` to save and exit.
 
 Copy the text below inside your `.bashrc` profile.
 
