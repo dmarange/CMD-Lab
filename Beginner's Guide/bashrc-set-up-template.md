@@ -38,7 +38,7 @@ alias remove_vasp_files='find . -type f \( -name "CONTCAR" -o -name "CHGCAR" -o 
 # 4) VASP environment (used by ASE + VASP modules)
 # ------------------------------------------------------------
 # NOTE: EBROOTVASP is set automatically when you `module load vasp`.
-export VASP_COMMAND="mpirun ${EBROOTVASP}/bin/vasp_std"
+export VASP_COMMAND="srun ${EBROOTVASP}/bin/vasp_std"
 export VASP_HOME="$HOME/vasp"
 export VASP_PP_PATH="$VASP_HOME/vasp_PP"
 export VASP_VDW="$VASP_HOME/vasp-support"
