@@ -47,7 +47,8 @@ export VASP_PP_PATH="$VASP_HOME/vasp_PP"
 export VASP_VDW="$VASP_HOME/vasp-support"
 ```
 
-Basic Setup
+Basic Setup 
+
 Inside the terminal type:
 `vi ~/.bashrc`
 
